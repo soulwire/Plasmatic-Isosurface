@@ -103,7 +103,7 @@ try
         # Sketch settings
 
         container: document.getElementById 'container'
-        type: Sketch.WEB_GL
+        type: Sketch.WEBGL
 
         # Uniforms
 
