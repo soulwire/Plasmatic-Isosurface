@@ -10,7 +10,7 @@
   try {
     gl = Sketch.create({
       container: document.getElementById('container'),
-      type: Sketch.WEB_GL,
+      type: Sketch.WEBGL,
       brightness: 0.8,
       blobiness: 1.5,
       particles: 40,
