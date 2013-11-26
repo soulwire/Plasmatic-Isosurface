@@ -5,6 +5,10 @@ GLSL =
 
     vert: """
 
+    #ifdef GL_ES
+    precision mediump float;
+    #endif
+
     // Uniforms
     uniform vec2 u_resolution;
 
@@ -139,7 +143,7 @@ if gl
         @.attachShader @shaderProgram, frag
         @linkProgram @shaderProgram
 
-        throw 'Failed to initialise shaders' if not @getProgramParameter @shaderProgram, @LINK_STATUS
+        throw @getProgramInfoLog @shaderProgram if not @getProgramParameter @shaderProgram, @LINK_STATUS
 
         @useProgram @shaderProgram
 
