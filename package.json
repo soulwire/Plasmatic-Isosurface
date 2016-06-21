@@ -1,0 +1,23 @@
+{
+  "name": "plasmatic-isosurface",
+  "version": "1.0.0",
+  "description": "A 2 dimensional plasma simulation running on the GPU, written in [GLSL](http://en.wikipedia.org/wiki/GLSL) and [CoffeeScript](http://coffeescript.org/) and rendered with [WebGL](http://caniuse.com/webgl).",
+  "scripts": {
+    "develop": "open index.html && coffee -wc -o js coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soulwire/Plasmatic-Isosurface.git"
+  },
+  "author": {
+    "name": "Justin Windle",
+    "url": "https://github.com/soulwire"
+  },
+  "bugs": {
+    "url": "https://github.com/soulwire/Plasmatic-Isosurface/issues"
+  },
+  "homepage": "https://github.com/soulwire/Plasmatic-Isosurface#readme",
+  "devDependencies": {
+    "coffee-script": "1.10.0"
+  }
+}
